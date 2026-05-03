@@ -5,7 +5,9 @@ function App() {
   return (
     <div>
       <h1>Paradise Nursery 🌿</h1>
-      <button>Get Started</button>
+      <div style={{ textAlign: "center" }}>
+        <button>Get Started</button>
+      </div>
       <ProductList />
     </div>
   );
