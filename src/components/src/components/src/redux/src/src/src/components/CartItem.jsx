@@ -16,27 +16,31 @@ function CartItem({ cart, setCart }) {
     ));
   };
 
-  const remove = (id) => {
+  const removeItem = (id) => {
     setCart(cart.filter(item => item.id !== id));
   };
 
-  const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  const total = cart.reduce(
+    (sum, item) => sum + item.price * item.quantity,
+    0
+  );
 
   return (
-    <div>
+    <div style={{ padding: "20px" }}>
       <h2>Shopping Cart</h2>
-      <h3>Total: ₹{total}</h3>
+
+      <h3>Total Amount: ₹{total}</h3>
 
       {cart.map(item => (
         <div key={item.id}>
           <img src={item.img} width="80" />
           <h4>{item.name}</h4>
-          <p>₹{item.price}</p>
-          <p>Qty: {item.quantity}</p>
+          <p>Price: ₹{item.price}</p>
+          <p>Quantity: {item.quantity}</p>
 
           <button onClick={() => increase(item.id)}>+</button>
           <button onClick={() => decrease(item.id)}>-</button>
-          <button onClick={() => remove(item.id)}>Delete</button>
+          <button onClick={() => removeItem(item.id)}>Delete</button>
         </div>
       ))}
 
