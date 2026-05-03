@@ -1,15 +1,20 @@
-import React from "react";
-
-function AboutUs() {
-  return (
-    <div style={{ padding: "20px" }}>
-      <h2>About Paradise Nursery</h2>
-      <p>
-        Paradise Nursery offers a wide variety of indoor plants that enhance your
-        living space. Our mission is to bring greenery into every home.
-      </p>
-    </div>
-  );
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('/images/bg.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
-export default AboutUs;
+h1 {
+  text-align: center;
+  color: white;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
