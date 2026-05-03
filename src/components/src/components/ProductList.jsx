@@ -17,14 +17,21 @@ function ProductList() {
   };
 
   return (
-    <div>
-      <h2>Plants</h2>
-      <p>Cart Count: {cart.length}</p>
+    <div style={{ padding: "20px" }}>
 
-      {plants.map(p => (
-        <div key={p.id}>
-          <img src={p.img} width="100" />
-          <h3>{p.name}</h3>
+      {/* Navbar */}
+      <nav>
+        <h3>🌿 Paradise Nursery</h3>
+        <p>Cart: {cart.length}</p>
+      </nav>
+
+      <h2>Plant Collection</h2>
+
+      {plants.map((p) => (
+        <div key={p.id} style={{ marginBottom: "20px" }}>
+          <img src={p.img} alt="" width="100" />
+          <h4>{p.name}</h4>
+          <p>Category: {p.category}</p>
           <p>₹{p.price}</p>
 
           <button
