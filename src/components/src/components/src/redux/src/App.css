@@ -1,12 +1,15 @@
-body {
-  margin: 0;
-  font-family: Arial;
-  background-image: url('/images/bg.jpg');
-  background-size: cover;
-  background-position: center;
+import React from "react";
+
+function AboutUs() {
+  return (
+    <div style={{ padding: "20px" }}>
+      <h2>About Paradise Nursery</h2>
+      <p>
+        Paradise Nursery offers a wide variety of indoor plants that enhance your
+        living space. Our mission is to bring greenery into every home.
+      </p>
+    </div>
+  );
 }
 
-h1 {
-  color: white;
-  text-align: center;
-}
+export default AboutUs;
