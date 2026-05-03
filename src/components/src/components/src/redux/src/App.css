@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background-image: url('/images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
